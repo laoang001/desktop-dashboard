@@ -1,0 +1,52 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "桌面效率助手",
+  "version": "0.1.0",
+  "identifier": "com.dashboard.desktop",
+  "build": {
+    "frontendDist": "../dist",
+    "devUrl": "http://127.0.0.1:1421",
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "桌面效率助手",
+        "width": 400,
+        "height": 780,
+        "minWidth": 340,
+        "minHeight": 520,
+        "resizable": true,
+        "center": true,
+        "visible": true,
+        "decorations": false,
+        "transparent": true,
+        "skipTaskbar": true,
+        "alwaysOnTop": false
+      }
+    ],
+    "security": {
+      "csp": null
+    },
+    "trayIcon": {
+      "id": "main-tray",
+      "iconPath": "icons/icon.png",
+      "tooltip": "桌面效率助手"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.ico"
+    ],
+    "category": "Productivity",
+    "shortDescription": "桌面效率助手",
+    "longDescription": "集成日程、待办、笔记、时间记录和AI助手的桌面效率工具"
+  }
+}

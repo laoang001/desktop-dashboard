@@ -19,6 +19,9 @@ android/capacitor-cordova-android-plugins/build/
 *.swp
 *.swo
 
+# Releases (large binary files)
+releases/
+
 # OS
 .DS_Store
 Thumbs.db
